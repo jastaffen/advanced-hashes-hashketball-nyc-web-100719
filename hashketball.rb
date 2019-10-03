@@ -89,7 +89,7 @@ end
 
 def player_stats(player_name)
   game_hash.each do |key, value|
-    value[:players].each do |player, stats|
+    value[:players].each do |player|
       binding.pry
       if player[:player_name] == player_name
 
