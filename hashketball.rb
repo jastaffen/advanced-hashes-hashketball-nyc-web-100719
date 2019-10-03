@@ -122,3 +122,7 @@ def big_shoe_rebounds
     end
   end
 end
+
+def most_points_scored
+  most_points = []
+  game_hash.each do |key, value|
