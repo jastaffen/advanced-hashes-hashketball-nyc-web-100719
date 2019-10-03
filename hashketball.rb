@@ -139,5 +139,7 @@ end
 def most_points_scored
   game_hash.each do |key, value|
     value[:players].each do |player|
-      if most_
+      if most_points == player[:points]
+        return player[:player_name]
+      end
 end
