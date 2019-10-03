@@ -102,4 +102,7 @@ def player_stats(player_name)
   new_hash
 end
 
-def big_shoe_rebounds(game_hash)
+def big_shoe_rebounds
+  game_hash.reduce(nil) do |memo, (key, value)|
+    
+end
