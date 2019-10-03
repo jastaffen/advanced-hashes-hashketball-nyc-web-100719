@@ -111,6 +111,7 @@ def big_shoe_rebounds
       if shoe_array[-1] == player[:shoe]
         binding.pry
         return player[:rebounds]
+      end
     end
   end
   binding.pry
