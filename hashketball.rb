@@ -14,11 +14,11 @@ def game_hash
         {:player_name => "Jason Terry", :number => 31, :shoe => 15, :points => 19, :rebounds => 2, :assists => 2, :steals => 4, :blocks => 11, :slam_dunks => 1}]},
     :away => {
       :team_name => "Charlotte Hornets",
-      :colors => ["Turqouise", "Purple"],
+      :colors => ["Turquoise", "Purple"],
       :players => [
         {:player_name => "Jeff Adrien", :number => 4, :shoe => 18, :points => 10, :rebounds => 1, :assists => 1, :steals => 2, :blocks => 7, :slam_dunks => 2},
         {:player_name => "Bismack Biyombo", :number => 0, :shoe => 16, :points => 12, :rebounds => 4, :assists => 7, :steals => 22, :blocks => 15, :slam_dunks => 10},
-        {:player_name => "Desagna Diop", :number => 2, :shoe => 14, :points => 24, :rebounds => 12, :assists => 12, :steals => 4, :blocks => 5, :slam_dunks => 5},
+        {:player_name => "DeSagna Diop", :number => 2, :shoe => 14, :points => 24, :rebounds => 12, :assists => 12, :steals => 4, :blocks => 5, :slam_dunks => 5},
         {:player_name => "Ben Gordon", :number => 8, :shoe => 15, :points => 33, :rebounds => 3, :assists => 2, :steals => 1, :blocks => 1, :slam_dunks => 0},
         {:player_name => "Kemba Walker", :number => 33, :shoe => 15, :points => 6, :rebounds => 12, :assists => 12, :steals => 7, :blocks => 5, :slam_dunks => 12}]}}
   game_hash
@@ -34,4 +34,62 @@ def num_points_scored(player_input)
       end
     end
   end
+end
+
+def shoe_size(player_input)
+  game_hash.each do |key, value|
+    value[:players].each do |player|
+      if player[:player_name] == player_input
+        return player[:shoe]
+      end
+    end
+  end
+end
+
+def team_colors(team)
+  game_hash.each do |key, value|
+    if value[:team_name] == team
+      return value[:colors]
+    end
+  end
+end
+
+#* Build a method, `team_names`, that operates on the game `Hash` to return an
+#`Array` of the team names.
+def team_names
+  teams = []
+  game_hash.each do |key, value|
+    if !teams.include?(value[:team_name])
+      teams << value[:team_name]
+    end
+  end
+  teams
+end
+
+# * Build a method, `player_numbers`, that takes in an argument of a team name and
+#   returns an `Array` of the jersey numbers for that team.
+
+
+def player_numbers(team_name)
+  team_numbers = []
+  game_hash.each do |key, value|
+    if value[:team_name] == team_name
+      value[:players].each do |player|
+        if !team_numbers.include?(player[:number])
+          team_numbers << player[:number]
+        end
+      end
+    end
+  end
+  team_numbers
+end
+
+#* Build a method, `player_stats`, that takes in an argument of a player's name
+#  and returns a hash of that player's stats.
+
+def player_stats(player_name)
+  game_hash.each do |key, value|
+    value[:players].each do |player|
+
+
 end
