@@ -95,7 +95,7 @@ def player_stats(player_name)
         player.each do |key, value|
           binding.pry
           new_hash[key] = value
-          new_hash.delete(new_hash[:player_name])
+          new_hash.delete(:player_name)
         end
       end
     end
