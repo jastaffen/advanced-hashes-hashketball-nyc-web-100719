@@ -126,7 +126,7 @@ end
 def most_points_scored
   most_points = []
   game_hash.each do |key, value|
-    value[:players].reduce([]) do |array, player|
+    value[:players].each do |player|
 
       if !array
         array << player[:points]
