@@ -193,5 +193,7 @@ def most_steals
 end
 
 def long_name_steals_a_ton?
-  
+  game_hash.each do |key, value|
+    value[:players].each do |player|
+      
 end
