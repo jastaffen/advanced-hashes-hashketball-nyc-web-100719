@@ -103,6 +103,9 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  game_hash.reduce(nil) do |memo, (key, value)|
-    
+  game_hash.each do |key, value|
+    value[:players].reduce(nil) do |memo, player|
+      
+    end
+  end
 end
