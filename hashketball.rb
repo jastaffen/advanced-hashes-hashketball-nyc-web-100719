@@ -153,5 +153,9 @@ def winning_team
     if key == :home
       value[:players].each do |player|
         home_sum += player[:points]
+      end
+    end
+    if key == :away
+      
   end
 end
