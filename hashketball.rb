@@ -94,7 +94,6 @@ def player_stats(player_name)
       player.each do |key, value|
         new_hash[key] = value
       #if player[:player_name] == player_name &&
-
       #  player.delete(player[:player_name])
       end
     end
