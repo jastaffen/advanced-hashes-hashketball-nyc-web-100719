@@ -106,7 +106,8 @@ def big_shoe_rebounds
   shoe_array = []
   game_hash.each do |key, value|
     value[:players].each do |player|
-      shoe_array << player[:rebounds]
+      if !shoe_array.include?(player[:rebounds])
+        shoe_array << player[:rebounds]
 
     end
   end
