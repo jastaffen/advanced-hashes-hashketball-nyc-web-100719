@@ -142,4 +142,6 @@ def most_points_scored
       if most_points == player[:points]
         return player[:player_name]
       end
+    end
+  end
 end
