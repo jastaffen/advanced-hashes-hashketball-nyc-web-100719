@@ -109,6 +109,7 @@ def big_shoe_rebounds
       shoe_array << player[:shoe]
       shoe_array.sort!
       if shoe_array[-1] == player[:shoe]
+        binding.pry
         return player[:rebounds]
     end
   end
