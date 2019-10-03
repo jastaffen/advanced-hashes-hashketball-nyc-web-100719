@@ -181,7 +181,7 @@ end
 # Write a method that returns true if the player with the longest name had the
 #    most steals. Call the method `long_name_steals_a_ton?`.
 
-def long_name_steals_a_ton?
+def most_steals
   steals_arr = []
   game_hash.each do |key, value|
     value[:players].each do |player|
@@ -189,6 +189,5 @@ def long_name_steals_a_ton?
       steals_arr.sort!
     end
   end
-  binding.pry
   steals_arr[-1]
 end
