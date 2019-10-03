@@ -93,7 +93,6 @@ def player_stats(player_name)
     value[:players].each do |player|
       if player[:player_name] == player_name
         player.each do |key, value|
-          binding.pry
           new_hash[key] = value
           new_hash.delete(:player_name)
         end
