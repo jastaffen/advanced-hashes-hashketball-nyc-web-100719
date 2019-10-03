@@ -189,5 +189,6 @@ def long_name_steals_a_ton?
       steals_arr.sort!
     end
   end
+  binding.pry
   steals_arr[-1]
 end
