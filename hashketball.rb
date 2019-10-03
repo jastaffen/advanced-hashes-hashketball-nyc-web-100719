@@ -129,7 +129,6 @@ def most_points
     value[:players].each do |player|
       if !most_points
         most_points << player[:points]
-        binding.pry
       end
     end
   end
