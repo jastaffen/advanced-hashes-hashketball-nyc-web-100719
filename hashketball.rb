@@ -113,12 +113,12 @@ def biggest_shoe
   shoe_array[-1]
 end
 
-biggest_shoe
+
 
 def big_shoe_rebounds
   game_hash.each do |key, value|
     value[:players].each do |player|
-      if shoe_array[-1] == player[:shoe]
+      if biggest_shoe == player[:shoe]
         binding.pry
         return player[:rebounds]
       end
