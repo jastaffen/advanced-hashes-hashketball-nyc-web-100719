@@ -102,17 +102,19 @@ def player_stats(player_name)
   new_hash
 end
 
-def big_shoe_rebounds
+def biggest_shoe
   shoe_array = []
   game_hash.each do |key, value|
     value[:players].each do |player|
       shoe_array << player[:shoe]
       shoe_array.sort!
     end
-    if shoe_array[-1] == player[:shoe]
-      binding.pry
-      return player[:rebounds]
-    end
   end
   binding.pry
+end
+
+def big_shoe_rebounds(shoe_array)
+if shoe_array[-1] == player[:shoe]
+  binding.pry
+  return player[:rebounds]
 end
