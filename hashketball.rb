@@ -92,10 +92,10 @@ def player_stats(player_name)
   game_hash.each do |key, value|
     value[:players].each do |player|
       player.each do |key, value|
-        binding.pry
+        new_hash[key] = value
       #if player[:player_name] == player_name &&
 
-        player.delete(player[:player_name])
+      #  player.delete(player[:player_name])
       end
     end
   end
