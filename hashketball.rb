@@ -175,5 +175,5 @@ def player_with_longest_name
       name_arr << player[:player_name]
     end
   end
-  name_arr.max_by {|x| x.length }
+  name_arr.max_by {|name| name.length }
 end
