@@ -108,6 +108,8 @@ def big_shoe_rebounds
     value[:players].each do |player|
       shoe_array << player[:shoe]
       shoe_array.sort!
+      if shoe_array[-1] == player[:shoe]
+        return player[:rebounds]
     end
   end
   binding.pry
