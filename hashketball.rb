@@ -106,7 +106,7 @@ def big_shoe_rebounds
   shoe_array = []
   game_hash.each do |key, value|
     value[:players].each do |player|
-      shoe_array << player[:rebounds]
+      shoe_array << player[:shoe]
     end
   end
   binding.pry
