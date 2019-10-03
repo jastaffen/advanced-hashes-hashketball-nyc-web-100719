@@ -88,10 +88,13 @@ end
 #  and returns a hash of that player's stats.
 
 def player_stats(player_name)
+  new_hash = {}
   game_hash.each do |key, value|
-    value[:players].each do |memo, player|
-      if player[:player_name] == player_name && !memo.include?(player)
-        memo[]
+    value[:players].each do |player|
+      player.each do |key, value|
+        binding.pry
+      #if player[:player_name] == player_name &&
+
         player.delete(player[:player_name])
       end
     end
