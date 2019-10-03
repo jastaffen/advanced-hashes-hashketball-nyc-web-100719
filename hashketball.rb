@@ -149,4 +149,5 @@ end
 def winning_team
   home_sum = 0
   away_sum = 0
-  
+  game_hash.each do |key, value|
+    if key == :home
