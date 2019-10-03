@@ -124,14 +124,20 @@ def big_shoe_rebounds
 end
 
 def most_points
-  most_points = []
+  points_arr = []
   game_hash.each do |key, value|
     value[:players].each do |player|
-      if !most_points.include?(player[:points])
-        most_points << player[:points]
-        most_points.sort!
+      if !points_arr.include?(player[:points])
+        points_arr << player[:points]
+        points_arr.sort!
       end
     end
   end
-  binding.pry
+  points_arr[-1]
+end
+
+def most_points_scored
+  game_hash.each do |key, value|
+    value[:players].each do |player|
+      if most_
 end
