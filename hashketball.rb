@@ -96,6 +96,7 @@ def player_stats(player_name)
       #if player[:player_name] == player_name &&
       #  player.delete(player[:player_name])
       end
+      binding.pry
     end
   end
 end
