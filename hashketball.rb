@@ -96,7 +96,6 @@ def player_stats(player_name)
           new_hash[key] = value
         end
       end
-      binding.pry
     end
   end
 end
