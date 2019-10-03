@@ -176,6 +176,6 @@ def player_with_longest_name
       name_arr.sort!
     end
   end
-  name_arr.reduce {|f, s| f.length > s.length ? s : f}
+  name_arr.reduce {|f, s| f.length > s.length ? s : f }
   binding.pry
 end
