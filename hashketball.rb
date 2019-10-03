@@ -185,7 +185,7 @@ def long_name_steals_a_ton?
   steals_arr = []
   game_hash.each do |key, value|
     value[:players].each do |player|
-      steals_arr << players[:steals]
+      steals_arr << player[:steals]
       steals_arr.sort!
     end
   end
