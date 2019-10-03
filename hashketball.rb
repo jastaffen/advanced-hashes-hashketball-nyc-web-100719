@@ -151,6 +151,7 @@ def winning_team
   away_sum = 0
   game_hash.each do |key, value|
     if key == :home
-      
+      value[:players].each do |player|
+        home_sum += player[:points]
   end
 end
