@@ -89,7 +89,7 @@ end
 
 def player_stats(player_name)
   game_hash.each do |key, value|
-    value[:players].reduce({}) do |memo, player|
+    value[:players].each do |memo, player|
       if player[:player_name] == player_name && !memo.include?(player)
         memo[]
         player.delete(player[:player_name])
