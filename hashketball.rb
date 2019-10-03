@@ -178,4 +178,9 @@ def player_with_longest_name
   name_arr.max_by {|name| name.length }
 end
 
+# Write a method that returns true if the player with the longest name had the
+#    most steals. Call the method `long_name_steals_a_ton?`.
+
 def long_name_steals_a_ton?
+
+end
