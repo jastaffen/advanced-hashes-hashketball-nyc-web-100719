@@ -156,6 +156,9 @@ def winning_team
       end
     end
     if key == :away
-      
+      value[:players].each do |player|
+        away_sum += player[:points]
+      end
+    end
   end
 end
