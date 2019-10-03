@@ -110,7 +110,7 @@ def biggest_shoe
       shoe_array.sort!
     end
   end
-  shoe_array
+  shoe_array[-1]
 end
 
 biggest_shoe
