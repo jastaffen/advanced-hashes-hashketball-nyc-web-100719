@@ -110,7 +110,7 @@ def biggest_shoe
       shoe_array.sort!
     end
   end
-  binding.pry
+  shoe_array
 end
 
 def big_shoe_rebounds(shoe_array)
