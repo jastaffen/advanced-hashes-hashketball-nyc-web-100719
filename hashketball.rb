@@ -113,7 +113,7 @@ def biggest_shoe
   shoe_array
 end
 
-biggest_shoe()
+biggest_shoe
 
 def big_shoe_rebounds
   game_hash.each do |key, value|
