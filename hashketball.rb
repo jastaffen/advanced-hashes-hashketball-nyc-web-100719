@@ -107,6 +107,7 @@ def big_shoe_rebounds
   game_hash.each do |key, value|
     value[:players].each do |player|
       shoe_array << player[:shoe]
+      shoe_array.sort!
     end
   end
   binding.pry
