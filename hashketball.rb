@@ -150,6 +150,7 @@ def winning_team
   home_sum = 0
   away_sum = 0
   game_hash.each do |key, value|
-    binding.pry
+    if key == :home
+      
   end
 end
